@@ -24,7 +24,7 @@
     "url": "http://github.com/tombenke/scmt.git"
   },
   "bin": {
-    "ncli": "./bin/cli.js"
+    "scmt": "./bin/cli.js"
   },
   "main": "index",
   "dependencies": {
