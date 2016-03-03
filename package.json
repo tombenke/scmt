@@ -1,0 +1,50 @@
+{
+  "name": "scmt",
+  "description": "Schema Manager Tool",
+  "version": "1.0.0",
+  "tags": [
+    "cli",
+    "util",
+    "tool",
+    "utility"
+  ],
+  "author": {
+    "name": "Tamás Benke",
+    "email": "tombenke@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/tombenke/scmt/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/tombenke/scmt/blob/master/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/tombenke/scmt.git"
+  },
+  "bin": {
+    "ncli": "./bin/cli.js"
+  },
+  "main": "index",
+  "dependencies": {
+    "commander": "2.0.0",
+    "generate-schema": "^2.1.1",
+    "jayschema": "0.2.x",
+    "js-yaml": "2.1.0",
+    "node-plantuml": "^0.4.4",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-debug": "^1.0.1",
+    "gulp-markdown": "^1.0.0",
+    "gulp-mustache": "^1.0.0",
+    "gulp-through": "^0.3.0",
+    "vinyl-buffer": "^1.0.0",
+    "gulp-rename": "^1.2.0"
+  },
+  "scripts": {
+    "lint": "jshint **.js"
+  }
+}
