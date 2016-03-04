@@ -30,7 +30,7 @@
   "dependencies": {
     "commander": "2.0.0",
     "generate-schema": "^2.1.1",
-    "jayschema": "0.2.x",
+    "jayschema": "0.3.x",
     "js-yaml": "2.1.0",
     "node-plantuml": "^0.4.4",
     "underscore": "^1.8.3"
