@@ -32,10 +32,13 @@
     "generate-schema": "^2.1.1",
     "jayschema": "0.3.x",
     "js-yaml": "2.1.0",
+    "csv-parse": "^1.2.1",
     "node-plantuml": "^0.4.4",
+    "should": "^8.2.2",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "istanbul": "0.4.2",
     "gulp": "^3.8.10",
     "gulp-debug": "^1.0.1",
     "gulp-markdown": "^1.0.0",
@@ -45,6 +48,8 @@
     "gulp-rename": "^1.2.0"
   },
   "scripts": {
-    "lint": "jshint **.js"
+    "test": "mocha -R spec **/*.test.js",
+    "coverage": "NODE_ENV=test istanbul cover _mocha -- -R spec **/*.test.js",
+    "lint": "jshint **/*.test.js"
   }
 }

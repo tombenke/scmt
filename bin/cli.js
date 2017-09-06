@@ -26,7 +26,6 @@
                 });
 
     program
-        .version(thisPackage.version)
         .command('json2yaml <input>')
         .description('Convert the "input" JSON file to YAML format')
         .option("-v, --verbose", "Verbose mode", Boolean, false)
@@ -38,7 +37,6 @@
                 });
 
     program
-        .version(thisPackage.version)
         .command('yaml2json <input>')
         .description('Convert the "input" YAML file to JSON format')
         .option("-v, --verbose", "Verbose mode", Boolean, false)
@@ -50,7 +48,6 @@
                 });
 
     program
-        .version(thisPackage.version)
         .command('validate <input> <schema>')
         .description('Validate the"input" JSON file with the "schema" JSON schema')
         .option("-v, --verbose", "Verbose mode", Boolean, false)
@@ -62,5 +59,16 @@
                     }, verbose);
                 });
 
-    program.parse(process.argv);
+    program
+        .command('csv2json <input>')
+        .description('Convert the "input" CSV file to JSON format')
+        .option("-v, --verbose", "Verbose mode", Boolean, false)
+        .action(function(input, options) {
+                verbose = options.verbose;
+                app.csv2json.execute({
+                        input: input
+                    }, verbose);
+                });
+
+    return program.parse(process.argv);
 })();

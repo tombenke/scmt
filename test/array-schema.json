@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "test/array.json schema Set",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "number",
+        "description": ""
+      },
+      "description": {
+        "type": "string",
+        "description": ""
+      },
+      "simpleDate": {
+        "type": "string",
+        "description": ""
+      }
+    },
+    "required": [
+      "id",
+      "description",
+      "simpleDate"
+    ],
+    "title": "test/array.json schema",
+    "description": ""
+  },
+  "description": ""
+}

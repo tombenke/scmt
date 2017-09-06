@@ -1,0 +1,11 @@
+[
+	{
+		"id": 24,
+		"description": "This is a string of 24",
+		"simpleDate": "2016-02-04"
+	}, {
+		"id": 42,
+		"description": "This is a string of 42",
+		"simpleDate": "2016-04-02"
+	}
+]
